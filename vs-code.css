@@ -1,0 +1,70 @@
+/* This file contains the VS Code specific tweaks. They aren't part of the theme itself. */
+
+/* Without the line numbers and the gutter, the text is too close to the edge. */
+body {
+    padding-left: 12px;
+}
+/* This div shouldn't exist. */
+pre > code > div {
+    display: inline-block;
+}
+
+/* Color adjustments for dark themes. */
+
+body > .vs-dark {
+    color: #bbb;
+}
+.vs-dark h1,
+.vs-dark h2,
+.vs-dark h3,
+.vs-dark h4,
+.vs-dark h5,
+.vs-dark h6 {
+    color: #eee;
+}
+.vs-dark h4,
+.vs-dark h5,
+.vs-dark h6 {
+    color: #bbb;
+}
+.vs-dark code {
+    color: #fff;
+}
+.vs-dark table > thead > tr > th {
+    border-color: rgba(255, 255, 255, 0.69);
+}
+.vs-dark hr,
+.vs-dark table > tbody > tr + tr > td,
+.vs-dark pre > code {
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* High Contrast: Black */
+
+body > .hc-black,
+.hc-black h1,
+.hc-black h2,
+.hc-black h3,
+.hc-black h4,
+.hc-black h5,
+.hc-black h6,
+.hc-black h4,
+.hc-black h5,
+.hc-black h6,
+.hc-black code {
+    color: #fff;
+}
+.hc-black hr,
+.hc-black code,
+.hc-black table > thead > tr > th,
+.hc-black table > tbody > tr + tr > td,
+.hc-black pre > code {
+    border-color: #fff;
+}
+.hc-black code,
+.hc-black blockquote {
+    background: transparent;
+}
+.hc-black blockquote {
+    border-bottom: 1px solid #fff;
+}
